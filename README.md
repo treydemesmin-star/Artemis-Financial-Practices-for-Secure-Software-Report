@@ -1,2 +1,17 @@
 # Artemis-Financial-Practices-for-Secure-Software-Report
 CS 305 Artemis Financial Secure Software Project  A secure software development project for Artemis Financial that demonstrates vulnerability assessment, SHA 256 checksum implementation, HTTPS configuration, certificate generation, dependency checking, and secure coding best practices using Java, Spring Boot, and Maven.
+# CS 305 Portfolio Reflection
+
+For this project, the client was Artemis Financial, a financial services company that needed its software secured. The company wanted to address possible security weaknesses in its web application, especially around protecting sensitive financial data, verifying data integrity, and securing communications. My main task was to refactor the application by adding a checksum feature using SHA-256 and enabling secure HTTPS communication.
+
+One thing I did well was identifying where the application needed stronger security controls and applying focused changes without overcomplicating the code. I implemented SHA-256 because it is stronger than older algorithms like MD5 and SHA-1, and it helps verify that data has not been changed. Coding securely is important because weak code can expose customer information, damage trust, and create legal or financial risks for a company. Strong software security adds value by protecting the company’s reputation, reducing risk, and making the application more reliable.
+
+The most challenging but helpful part of the vulnerability assessment was using dependency-check and reviewing the security report. It helped me understand how third-party libraries can introduce vulnerabilities even when my own code works correctly. It also showed me why secure software development is not just about writing code, but also about testing dependencies, reviewing configurations, and checking for known risks.
+
+I increased layers of security by adding a SHA-256 checksum endpoint, generating and using a certificate, and configuring the application to run through HTTPS on port 8443. In the future, I would use tools like OWASP Dependency-Check, manual code review, vulnerability assessment flowcharts, and current secure coding standards to assess vulnerabilities and choose mitigation techniques. I would also compare the severity of each vulnerability to the actual risk it creates for the application.
+
+To make sure the code and application were functional and secure, I tested the refactored application after making changes and confirmed that it ran without errors. I also checked the checksum output and reviewed the dependency-check report to see whether new vulnerabilities were introduced. This helped me confirm that the security updates worked while keeping the application functional.
+
+The resources, tools, and coding practices I used that will help me in future assignments include Java, Spring Boot, Maven, SHA-256 hashing, HTTPS configuration, certificate generation, OWASP Dependency-Check, manual code review, and secure coding practices. I also learned the importance of making small, clear code changes so they are easier to test and maintain.
+
+For future employers, I could show this assignment as an example of my ability to review software for vulnerabilities, refactor code securely, use industry tools, and explain security decisions clearly. This project shows that I can apply secure coding practices, work with cryptographic hashing, configure secure communication, and document my process in a professional way.
